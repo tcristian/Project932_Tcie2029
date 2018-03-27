@@ -118,9 +118,14 @@ public class LaboratoriesUI {
                     if (!success) {
                         System.out.println("Cannot save grade");
                     }
-                } catch (NumberFormatException|IOException|ParseException e) {
+                } catch (IOException e) {
+                    System.out.println("Cannot save grade");
+                } catch (NumberFormatException e) {
+                    System.out.println("Cannot save grade");
+                } catch (ParseException e) {
                     System.out.println("Cannot save grade");
                 }
+
 
             }
 
