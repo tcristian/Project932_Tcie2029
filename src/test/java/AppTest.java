@@ -1,4 +1,3 @@
-package repository;
 import controller.LaboratoriesController;
 import junit.framework.TestCase;
 import model.Laboratory;
@@ -42,13 +41,7 @@ public class AppTest extends TestCase {
 
 
     }
-    public void testAddStudentController(){
-        System.out.println("\n TEST - Save student : Controller \n");
-        Student student = new Student("id93u4", "Nume Prenume", 932);
-        ctrl.saveStudent(student);
-        assertTrue(ctrl.checkReg(student.getRegNumber()) == true);
-
-    }
+   
     public void testSaveLaboratory() throws Exception {
         System.out.println("\n TEST - Save Laboratory \n");
 
