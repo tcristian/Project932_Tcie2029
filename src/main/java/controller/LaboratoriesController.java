@@ -53,11 +53,11 @@ public class LaboratoriesController {
             System.out.println(e.toString());
         }
     }
-    public boolean checkUsername(String user){
+    public boolean checkReg(String reg){
         try {
             List<Student> students = this.studentPersistence.getStudentsList();
             for (Student student : students) {
-                if(student.getName() == user)
+                if(student.getRegNumber() == reg)
                     return true;
             }
         }catch (Exception e) {

@@ -1,4 +1,3 @@
-package repository;
 
 import controller.LaboratoriesController;
 import junit.framework.TestCase;
@@ -11,9 +10,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import repository.*;
 /**
- * Created by Alex on 01.04.2018.
+ * Created by Cristian on 01.04.2018.
  */
 
 public class AppTest extends TestCase {
@@ -43,6 +42,13 @@ public class AppTest extends TestCase {
         assertEquals(studentName, "mircea bravo");
         assertEquals(studentGroup, 933);
 
+
+    }
+    public void testAddStudentController(){
+        System.out.println("\n TEST - Save student : Controller \n");
+        Student student = new Student("id93u4", "Nume Prenume", 932);
+        ctrl.saveStudent(student);
+        assertTrue(ctrl.checkReg(student.getRegNumber()) == true);
 
     }
 
