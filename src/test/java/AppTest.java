@@ -1,4 +1,4 @@
-
+package repository;
 import controller.LaboratoriesController;
 import junit.framework.TestCase;
 import model.Laboratory;
@@ -11,9 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import repository.*;
-/**
- * Created by Cristian on 01.04.2018.
- */
+
 
 public class AppTest extends TestCase {
     public void setUp() throws Exception {
@@ -51,7 +49,6 @@ public class AppTest extends TestCase {
         assertTrue(ctrl.checkReg(student.getRegNumber()) == true);
 
     }
-
     public void testSaveLaboratory() throws Exception {
         System.out.println("\n TEST - Save Laboratory \n");
 
