@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="572d3755-62ab-44a4-9213-d80ae69a9bef" name="Default" comment="commit42">
+    <list default="true" id="572d3755-62ab-44a4-9213-d80ae69a9bef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laboratories.txt" afterPath="$PROJECT_DIR$/laboratories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/students.txt" afterPath="$PROJECT_DIR$/students.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,6 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Project932_Tcie2029$AppTest__2_.coverage" NAME="AppTest (2) Coverage Results" MODIFIED="1522821507362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>repository.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Project932_Tcie2029$App.coverage" NAME="App Coverage Results" MODIFIED="1522819816537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>.*</FILTER>
     </SUITE>
@@ -26,8 +30,8 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -394,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest (2)">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -416,7 +420,12 @@
       <method />
     </configuration>
     <configuration default="false" name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="Project932_Tcie2029" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -443,32 +452,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AppTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Project932_Tcie2029" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="repository.AppTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -870,18 +853,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest (2)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest (2)" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.App" />
+        <item index="2" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -899,7 +880,7 @@
       <workItem from="1522150869623" duration="3024000" />
       <workItem from="1522154200315" duration="268000" />
       <workItem from="1522777216576" duration="3543000" />
-      <workItem from="1522782352473" duration="3561000" />
+      <workItem from="1522782352473" duration="4459000" />
     </task>
     <task id="LOCAL-00001" summary="Update1">
       <created>1522151836768</created>
@@ -1006,24 +987,28 @@
       <option name="project" value="LOCAL" />
       <updated>1522820445852</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="comm1">
+      <created>1522820960571</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1522820960571</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_(1) - 2018.04.04 at 08h 36m 55s.xml">
-      <configuration name="AppTest (1)" configurationId="JUnit" />
+    <history-entry file="AppTest - 2018.04.04 at 09h 00m 05s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_(1) - 2018.04.04 at 08h 37m 05s.xml">
-      <configuration name="AppTest (1)" configurationId="JUnit" />
+    <history-entry file="AppTest - 2018.04.04 at 09h 02m 18s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_(1) - 2018.04.04 at 08h 37m 39s.xml">
-      <configuration name="AppTest (1)" configurationId="JUnit" />
+    <history-entry file="AppTest - 2018.04.04 at 09h 02m 42s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_(1) - 2018.04.04 at 08h 37m 48s.xml">
-      <configuration name="AppTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_(1) - 2018.04.04 at 08h 39m 17s.xml">
-      <configuration name="AppTest (1)" configurationId="JUnit" />
+    <history-entry file="AppTest - 2018.04.04 at 09h 02m 54s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest_(1) - 2018.04.04 at 08h 39m 48s.xml">
       <configuration name="AppTest (1)" configurationId="JUnit" />
@@ -1040,9 +1025,12 @@
     <history-entry file="AppTest_(2) - 2018.04.04 at 08h 44m 24s.xml">
       <configuration name="AppTest (2)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_(2) - 2018.04.04 at 08h 58m 28s.xml">
+      <configuration name="AppTest (2)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10722000" />
+    <option name="totallyTimeSpent" value="11620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="22" width="1709" height="1106" extended-state="0" />
@@ -1062,11 +1050,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329934" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1089,7 +1077,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update1" />
     <MESSAGE value="Update2" />
     <MESSAGE value="Update4" />
     <MESSAGE value="Update5" />
@@ -1109,7 +1096,13 @@
     <MESSAGE value="commit3" />
     <MESSAGE value="commit4" />
     <MESSAGE value="commit42" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit42" />
+    <MESSAGE value="comm1" />
+    <MESSAGE value="comm3" />
+    <MESSAGE value="33333" />
+    <MESSAGE value="comit 3" />
+    <MESSAGE value="Commitssss" />
+    <MESSAGE value="Commits2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commits2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1390,14 +1383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laboratories.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Laboratory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -1406,10 +1391,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/junit/framework/Assert.class">
+    <entry file="file://$PROJECT_DIR$/laboratories.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2425">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1422,10 +1407,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/junit/framework/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2425">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,8 +5,6 @@ import model.Student;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import repository.*;
@@ -81,4 +79,27 @@ public class AppTest extends TestCase {
 
     }
 
+    public void testAddGrade_l2() throws Exception {
+        System.out.println("\n TEST - Add new grade2 \n");
+        LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
+        ctrl.addGrade("grade1", "2", 5);
+        BufferedReader reader = new BufferedReader(new FileReader("laboratories.txt"));
+        String line = reader.readLine();
+        String[] temp = line.split(" ");
+        float labGrade = Float.valueOf(temp[3]);
+        assertEquals(labGrade, (float) 9);
+
+    }
+
+    public void testAddGrade_l2_p2() throws Exception {
+        System.out.println("\n TEST - Add new grade3 \n");
+        LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
+        ctrl.addGrade("grade2", "3", 8);
+        BufferedReader reader = new BufferedReader(new FileReader("laboratories.txt"));
+        String line = reader.readLine();
+        String[] temp = line.split(" ");
+        String labGrade = temp[4];
+        assertEquals(labGrade, "asdf1234");
+
+    }
 }
