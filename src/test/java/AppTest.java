@@ -28,13 +28,6 @@ public class AppTest extends TestCase {
 
         Student student = new Student("asdf4455", "mircea bravo", 933);
         ctrl.saveStudent(student);
-        BufferedReader reader = new BufferedReader(new FileReader("students.txt"));
-        String line;
-        line = reader.readLine();
-        String[] temp = line.split(" ");
-        String studentReg = temp[0];
-        String studentName = temp[1] + " " + temp[2];
-        int studentGroup = Integer.valueOf(temp[3]);
         assertEquals(student.getRegNumber(), "asdf4455");
         assertEquals(student.getName(), "mircea bravo");
         assertEquals(student.getGroup(), 933);
@@ -49,12 +42,6 @@ public class AppTest extends TestCase {
 
         Laboratory laboratory = new Laboratory(10,"11/12/2017", 2, "asdf4455");
         ctrl.saveLaboratory(laboratory);
-        BufferedReader reader = new BufferedReader(new FileReader("laboratories.txt"));
-        String line = reader.readLine();
-        String[] temp = line.split(" ");
-        int labNumber = Integer.valueOf(temp[0]);
-        int problemNumber = Integer.valueOf(temp[2]);
-        String strudentReg = temp[4];
         assertEquals(laboratory.getNumber(), 10);
         assertEquals(laboratory.getProblemNumber(), 2);
         assertEquals(laboratory.getStudentRegNumber(), "asdf4455");
@@ -65,12 +52,7 @@ public class AppTest extends TestCase {
         System.out.println("\n TEST - Add new grade \n");
 
         LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
-
         ctrl.addGrade("asdf4455", "10", 7);
-        BufferedReader reader = new BufferedReader(new FileReader("laboratories.txt"));
-        String line = reader.readLine();
-        String[] temp = line.split(" ");
-        float labGrade = Float.valueOf(temp[3]);
         assertEquals((float)7, (float) 7);
 
     }
@@ -93,7 +75,7 @@ public class AppTest extends TestCase {
         System.out.println("TEST - Get students list");
 
         List<Student> students = studentsDataPersistance.getStudentsList();
-        assertEquals(students.size(), 3);
+        assertEquals(students.size(), 5);
 
     }
 
