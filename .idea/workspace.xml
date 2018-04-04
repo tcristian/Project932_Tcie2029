@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="572d3755-62ab-44a4-9213-d80ae69a9bef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+            <state relative-caret-position="80">
+              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -859,7 +858,7 @@
       <workItem from="1522150869623" duration="3024000" />
       <workItem from="1522154200315" duration="268000" />
       <workItem from="1522777216576" duration="3543000" />
-      <workItem from="1522782352473" duration="1436000" />
+      <workItem from="1522782352473" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="Update1">
       <created>1522151836768</created>
@@ -931,11 +930,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522818369598</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update-test544">
+      <created>1522818557804</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1522818557804</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8597000" />
+    <option name="totallyTimeSpent" value="8817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="22" width="1709" height="1106" extended-state="0" />
@@ -993,7 +999,8 @@
     <MESSAGE value="Update-test3" />
     <MESSAGE value="Update-test5" />
     <MESSAGE value="Update-test54" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update-test54" />
+    <MESSAGE value="Update-test544" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update-test544" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1456,8 +1463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        <state relative-caret-position="80">
+          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
