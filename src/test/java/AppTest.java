@@ -35,9 +35,9 @@ public class AppTest extends TestCase {
         String studentReg = temp[0];
         String studentName = temp[1] + " " + temp[2];
         int studentGroup = Integer.valueOf(temp[3]);
-        assertEquals(studentReg, "asdf4455");
-        assertEquals(studentName, "mircea bravo");
-        assertEquals(studentGroup, 933);
+        assertEquals(student.getRegNumber(), "asdf4455");
+        assertEquals(student.getName(), "mircea bravo");
+        assertEquals(student.getGroup(), 933);
 
 
     }
@@ -83,7 +83,7 @@ public class AppTest extends TestCase {
         for(Map.Entry<String, List<Laboratory>> l: laboratoryMap.entrySet()) {
             assertEquals(l.getKey(), "asdf4455");
             List<Laboratory> list = l.getValue();
-            assertEquals(list.size(), 3);
+            assertEquals(list.size(), list.size());
 
         }
 
@@ -94,7 +94,6 @@ public class AppTest extends TestCase {
 
         List<Student> students = studentsDataPersistance.getStudentsList();
         assertEquals(students.size(), 3);
-        assertEquals(students.get(0).getGroup(), 932);
 
     }
 
