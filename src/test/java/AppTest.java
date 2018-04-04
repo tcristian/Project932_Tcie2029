@@ -22,7 +22,7 @@ public class AppTest extends TestCase {
     private FileDataPersistence laboratoryDataPersistance = new FileDataPersistence("laboratories.txt");
     private LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
 
-    public void testSaveStudent() throws Exception {
+    public void testSaveStudent2() throws Exception {
         System.out.println("\n TEST - Save student \n");
 
 
@@ -41,8 +41,8 @@ public class AppTest extends TestCase {
 
 
     }
-   
-    public void testSaveLaboratory() throws Exception {
+
+    public void testSaveLaboratory2() throws Exception {
         System.out.println("\n TEST - Save Laboratory \n");
 
         LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
@@ -61,7 +61,7 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testAddGrade() throws Exception {
+    public void testAddGrade2() throws Exception {
         System.out.println("\n TEST - Add new grade \n");
 
         LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
@@ -75,10 +75,10 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testGetLaboratoryMap() throws Exception {
+    public void testGetLaboratoryMap2() throws Exception {
         System.out.println("TEST - Get laboratory map");
         //LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
-        testAddGrade();
+        testAddGrade2();
         Map<String, List<Laboratory>> laboratoryMap = laboratoryDataPersistance.getLaboratoryMap();
         for(Map.Entry<String, List<Laboratory>> l: laboratoryMap.entrySet()) {
             assertEquals(l.getKey(), "asdf4455");
@@ -92,7 +92,7 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testGetStudentsList() throws Exception {
+    public void testGetStudentsList2() throws Exception {
         System.out.println("TEST - Get students list");
 
         List<Student> students = studentsDataPersistance.getStudentsList();
