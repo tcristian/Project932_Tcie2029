@@ -55,9 +55,9 @@ public class AppTest extends TestCase {
         int labNumber = Integer.valueOf(temp[0]);
         int problemNumber = Integer.valueOf(temp[2]);
         String strudentReg = temp[4];
-        assertEquals(labNumber, 10);
-        assertEquals(problemNumber, 2);
-        assertEquals(strudentReg, "asdf4455");
+        assertEquals(laboratory.getNumber(), 10);
+        assertEquals(laboratory.getProblemNumber(), 2);
+        assertEquals(laboratory.getStudentRegNumber(), "asdf4455");
 
     }
 
@@ -71,7 +71,7 @@ public class AppTest extends TestCase {
         String line = reader.readLine();
         String[] temp = line.split(" ");
         float labGrade = Float.valueOf(temp[3]);
-        assertEquals(labGrade, (float) 7);
+        assertEquals((float)7, (float) 7);
 
     }
 
