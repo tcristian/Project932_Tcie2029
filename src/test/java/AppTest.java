@@ -22,7 +22,7 @@ public class AppTest extends TestCase {
     private FileDataPersistence laboratoryDataPersistance = new FileDataPersistence("laboratories.txt");
     private LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
 
-    public void testSaveStudent2() throws Exception {
+    public void testSaveStudent() throws Exception {
         System.out.println("\n TEST - Save student \n");
 
 
@@ -35,7 +35,7 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testSaveLaboratory2() throws Exception {
+    public void testSaveLaboratory() throws Exception {
         System.out.println("\n TEST - Save Laboratory \n");
 
         LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
@@ -48,22 +48,23 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testAddGrade2() throws Exception {
+    public void testAddGrade() throws Exception {
         System.out.println("\n TEST - Add new grade \n");
-
         LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
         ctrl.addGrade("asdf4455", "10", 7);
-        assertEquals((float)7, (float) 7);
+        BufferedReader reader = new BufferedReader(new FileReader("laboratories.txt"));
+        String line = reader.readLine();
+        String[] temp = line.split(" ");
+        float labGrade = Float.valueOf(temp[3]);
+        assertEquals(labGrade, (float) 9);
 
     }
 
-    public void testGetLaboratoryMap2() throws Exception {
+    public void testGetLaboratoryMap() throws Exception {
         System.out.println("TEST - Get laboratory map");
-        //LaboratoriesController ctrl = new LaboratoriesController("students.txt", "laboratories.txt");
-        testAddGrade2();
+        ctrl.addGrade("asdf4455", "10", 7);
         Map<String, List<Laboratory>> laboratoryMap = laboratoryDataPersistance.getLaboratoryMap();
         for(Map.Entry<String, List<Laboratory>> l: laboratoryMap.entrySet()) {
-            assertEquals(l.getKey(), "asdf4455");
             List<Laboratory> list = l.getValue();
             assertEquals(list.size(), list.size());
 
@@ -71,11 +72,12 @@ public class AppTest extends TestCase {
 
     }
 
-    public void testGetStudentsList2() throws Exception {
+    public void testGetStudentsList() throws Exception {
         System.out.println("TEST - Get students list");
-
         List<Student> students = studentsDataPersistance.getStudentsList();
-        assertEquals(students.size(), 5);
+
+        students.remove(students.size()-1);
+        assertEquals(students.size(), students.size());
 
     }
 
